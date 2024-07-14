@@ -1,0 +1,7 @@
+[user]
+	name = kalek
+	email = hello@kalek.dev
+[core]
+	editor = vim
+[push]
+	autoSetupRemote = true
