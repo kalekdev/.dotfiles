@@ -3,10 +3,14 @@
 ### Installation
 Tutorial: https://www.atlassian.com/git/tutorials/dotfiles
 
+Firstly install git, zsh and pure.
+
 1. Delete any conflicting dotfiles
 2. `git clone --bare git@github.com:kalekdev/.dotfiles.git $HOME/.cfg`
-3. Restart shell
-4. Manage dotfiles using config alias
+3. `git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout`
+4. Restart shell
+5. `config config --local status.showUntrackedFiles no`
+6. Good to go! Manage dotfiles using the config alias.
 
 ### System information
 Debian 12 "bookworm"
