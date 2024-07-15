@@ -30,3 +30,7 @@ alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 # Temporary battery level alias. TODO: Build into status bar
 alias battery="cat /sys/class/power_supply/BAT0/capacity"
+
+# Vim mode
+bindkey -v
+bindkey ^R history-incremental-search-backward
