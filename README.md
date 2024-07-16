@@ -17,17 +17,17 @@ Debian 12 "bookworm"
 
 Installed:
 sway
+brightness-ctl
+apt install network-manager for nmcli / nmtui commands - to disable conflicting wpa_supplicant process comment out the WantedBy line in service file
 zsh
 pure (manually, npm package installation didnt work)
 nvm
 firefox - using their apt repository rather than the slowly updated in debian packages
-pipewire - 
+pipewire
 spotify_player - using pulseaudio backend, works fine with pipewire 
 vscode
-apt install network-manager for nmcli / nmtui commands
 
 TODO:
-pipewire - need to add volume controls to sway config https://www.reddit.com/r/swaywm/comments/qei3oh/how_can_i_set_up_keybindgs_with_sway_for_volume/ https://wiki.archlinux.org/title/WirePlumber#Keyboard_volume_control
 nvim - todo configure kickstart.nvim
 zsh plugins for additional autocompletion
 tmux vs control through sway?
