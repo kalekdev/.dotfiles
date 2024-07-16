@@ -34,3 +34,4 @@ tmux vs control through sway?
 install notification daemon to handle firefox properly
 Discord web client or CLI / wayland compatible alternative? (check arch suggestions)
 setup ssh server securely for use between my laptop / pc (only key auth)
+debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that
