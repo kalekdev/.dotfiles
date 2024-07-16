@@ -14,10 +14,9 @@ fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
-# Added by NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Case-insensitive autocomplete
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # Used for managing dotfiles repo: https://www.atlassian.com/git/tutorials/dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
@@ -31,6 +30,11 @@ alias battery="cat /sys/class/power_supply/BAT0/capacity"
 # Vim mode
 bindkey -v
 bindkey ^R history-incremental-search-backward
+
+# Added by NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add Go to PATH
 export PATH=$PATH:/usr/local/go/bin
