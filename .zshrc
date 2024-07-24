@@ -38,6 +38,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add Go to PATH
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # Add cargo to path
 export PATH=$PATH:~/.cargo/bin/
