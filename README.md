@@ -18,14 +18,15 @@ Debian 12 "bookworm"
 Installed:
 sway
 brightness-ctl
-apt install network-manager for nmcli / nmtui commands - to disable conflicting wpa_supplicant process comment out the WantedBy line in service file
+apt install network-manager for nmcli / nmtui commands - https://stackoverflow.com/a/51282646/12320544 fixed wpa_supplicant conflict
 zsh
 pure (manually, npm package installation didnt work)
 nvm
 firefox - using their apt repository rather than the slowly updated in debian packages
 pipewire
 spotify_player - using pulseaudio backend, works fine with pipewire 
-vscode
+vscode - with microsoft apt repo
+bemenu
 
 TODO:
 nvim - todo configure kickstart.nvim

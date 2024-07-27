@@ -21,6 +21,12 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # Used for managing dotfiles repo: https://www.atlassian.com/git/tutorials/dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
+# Neovim aliases
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+export EDITOR=nvim
+
 # Electron flags so VSC works on wayland: https://github.com/microsoft/vscode/issues/146349
 alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 

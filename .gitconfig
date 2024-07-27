@@ -2,7 +2,7 @@
 	name = kalek
 	email = hello@kalek.dev
 [core]
-	editor = vim
+	editor = nvim
 [push]
 	autoSetupRemote = true
 [init]
