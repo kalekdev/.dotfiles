@@ -17,6 +17,7 @@ Debian 12 "bookworm"
 
 Installed:
 - sway
+- swaylock
 - brightness-ctl
 - apt install network-manager for nmcli / nmtui commands - https://stackoverflow.com/a/51282646/12320544 fixed wpa_supplicant conflict
 - zsh
