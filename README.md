@@ -30,6 +30,7 @@ Installed:
 - vscode - with microsoft apt repo
 - bemenu
 - grimshot
+- mako
 - imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
 - zathura
 

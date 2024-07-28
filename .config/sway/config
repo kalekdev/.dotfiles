@@ -1,3 +1,6 @@
+# Start notification manager
+exec mako
+
 ### Variables
 
 # Logo key
