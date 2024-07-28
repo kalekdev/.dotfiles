@@ -28,6 +28,8 @@ spotify_player - using pulseaudio backend, works fine with pipewire
 vscode - with microsoft apt repo
 bemenu
 grimshot
+imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
+zathura
 
 TODO:
 nvim - todo configure kickstart.nvim
