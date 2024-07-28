@@ -4,10 +4,6 @@ HISTSIZE=10000
 SAVEHIST=1000
 setopt SHARE_HISTORY
 
-# For ohmyzsh
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME=""
-
 # Initialise pure prompt
 # Warning: Do not enable the vi-mode or virtualenv zsh plugins (incompatible)
 fpath+=($HOME/.zsh/pure)
@@ -30,8 +26,7 @@ export EDITOR=nvim
 # Electron flags so VSC works on wayland: https://github.com/microsoft/vscode/issues/146349
 alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
-# Temporary battery level alias. TODO: Build into status bar
-alias battery="cat /sys/class/power_supply/BAT0/capacity"
+alias spotify="spotify_player"
 
 # Vim mode
 bindkey -v
