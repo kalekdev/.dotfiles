@@ -22,6 +22,7 @@ Installed:
 - zsh
 - pure (manually, npm package installation didnt work)
 - nvm
+- go
 - firefox - using their apt repository rather than the slowly updated in debian packages
 - pipewire
 - spotify_player - using pulseaudio backend, works fine with pipewire 
