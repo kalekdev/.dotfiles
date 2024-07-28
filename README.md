@@ -27,6 +27,7 @@ pipewire
 spotify_player - using pulseaudio backend, works fine with pipewire 
 vscode - with microsoft apt repo
 bemenu
+grimshot
 
 TODO:
 nvim - todo configure kickstart.nvim
