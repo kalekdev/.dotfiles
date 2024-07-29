@@ -29,7 +29,7 @@ gaps outer -20
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg $HOME/wallpaper.jpg fill
 
-output DP-2 mode 1920x1080@144Hz
+output DP-1 mode 1920x1080@144Hz
 
 ### Idle configuration
 
