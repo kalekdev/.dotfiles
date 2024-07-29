@@ -23,8 +23,9 @@ alias vi="nvim"
 alias vim="nvim"
 export EDITOR=nvim
 
-# Electron flags so VSC works on wayland: https://github.com/microsoft/vscode/issues/146349
+# Electron flags
 alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
+alias compass="mongodb-compass --ignore-additional-command-line-flags --ozone-platform-hint=auto"
 
 alias spotify="spotify_player"
 
