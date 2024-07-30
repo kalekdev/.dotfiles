@@ -4,6 +4,6 @@ read -p "Reminder to push all repositories to remote. Are you sure you want to s
 echo 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	poweroff
+	systemctl poweroff
 fi
 
