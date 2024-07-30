@@ -33,15 +33,18 @@ Installed:
 - mako-notifier
 - imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
 - zathura
+- xdg-desktop-portal-wlr for screen sharing
 
 TODO:
+- https://soyuka.me/make-screen-sharing-wayland-sway-work/
 - nvim - todo configure kickstart.nvim
 - zsh plugins for additional autocompletion
-- tmux vs control through sway?
+- tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode...
 - install notification daemon to handle firefox properly
 - Discord web client or CLI / wayland compatible alternative? (check arch suggestions)
 - setup ssh server securely for use between my laptop / pc (only key auth)
 - debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that https://thevaluable.dev/zsh-install-configure-mouseless/
+- makoctl, add mute notifications keybind to toggle do-not-disturb mode
 
 Firefox add apt registry:
 ```bash
@@ -56,3 +59,7 @@ Pin-Priority: 1000
 ' | sudo tee /etc/apt/preferences.d/mozilla 
 sudo apt-get update && sudo apt-get install firefox
 ```
+
+Bluetooth USB dongle fix: https://askubuntu.com/questions/1339825/ubuntu-21-04-bluetooth-5-0-dongle-does-not-work-and-says-theres-no-firmware
+
+Firefox audio playback fix: https://wiki.debian.org/ffmpeg

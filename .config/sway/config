@@ -1,3 +1,6 @@
+# Set variable needed for screen sharing
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 # Start notification manager
 exec mako
 
@@ -200,5 +203,7 @@ bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     status_command while ~/bin/bar.sh; do sleep 0.2; done
 }
+
+exec swaymsg 'workspace 1; exec firefox' 
 
 include /etc/sway/config.d/*

@@ -16,7 +16,7 @@ else
   if [[ "$sound_output" =~ "bluez" ]]; then
 	  volume_formatted="$volume (Bluetooth)"
   else
-	  volume_formatted="$volume (Speaker)"
+	  volume_formatted="$volume (Line Out)"
   fi
 fi
 
