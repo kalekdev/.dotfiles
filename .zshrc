@@ -17,6 +17,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # Used for managing dotfiles repo: https://www.atlassian.com/git/tutorials/dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
+# Pre poweroff confirmation
+alias poweroff="poweroff.sh"
+
 # Neovim aliases
 alias v="nvim"
 alias vi="nvim"
@@ -32,6 +35,9 @@ alias spotify="spotify_player"
 # Vim mode
 bindkey -v
 bindkey ^R history-incremental-search-backward
+
+# Add custom scripts to path
+export PATH=$PATH:$HOME/bin
 
 # Add Go to PATH
 export PATH=$PATH:/usr/local/go/bin
