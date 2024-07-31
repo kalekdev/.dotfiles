@@ -17,11 +17,18 @@ set $right l
 
 set $term foot
 
+# Colors
+set $ctext #eee2e2
+set $cbg #b83b1c
+set $cprimary #dd6345
+set $csecondary #e39776
+set $ctertiary #e3c09d
+
 # TODO: Write script for the inputs, see: https://wiki.archlinux.org/title/Dmenu#Displaying_custom_items
 # TODO: Get vim mode to work
-set $menu echo "firefox\nmongodb-compass --ignore-additional-command-line-flags --ozone-platform-hint=auto" | bemenu | xargs swaymsg exec --
+set $menu echo "firefox\nmongodb-compass --ignore-additional-command-line-flags --ozone-platform-hint=auto" | bemenu -p ">" -H 23 --tf "$cprimary" --ff "$ctext" --nf "$ctext" --fbf "$ctext" --hf "$cprimary" | xargs swaymsg exec --
 
-client.focused #940000 #560d0d #ffffff #c30101 #940000
+client.focused $cprimary $cbg $ctext $csecondary $cprimary
 
 gaps inner 20
 gaps outer -20
@@ -30,7 +37,7 @@ gaps outer -20
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $HOME/wallpaper.jpg fill
+output * bg $HOME/wallpaper.png fill
 
 output DP-1 mode 1920x1080@144Hz
 
@@ -197,7 +204,7 @@ bar {
     position top
 
     colors {
-	focused_workspace #940000 #560d0d #ffffff
+	focused_workspace $cprimary $cbg $ctext
     }
 
     # When the status_command prints a new line to stdout, swaybar updates.

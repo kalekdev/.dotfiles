@@ -6,7 +6,7 @@ uptime_formatted=$(uptime -p | cut -d " " -f2-)
 ssid=$(nmcli -t -f active,ssid dev wifi | egrep '^yes' | awk -F: '{print $2} ')
 ip=$(hostname -I | cut -d' ' -f1)
 
-if wpctl status | grep -q 'MUTED'; then
+if wpctl status | grep "*" | grep -q 'MUTED'; then
   volume_formatted=Muted
 else
   # Example: 50%
@@ -20,11 +20,11 @@ else
   fi
 fi
 
-battery_capacity=$(cat /sys/class/power_supply/BAT0/capacity)
-battery_status=$(cat /sys/class/power_supply/BAT0/status)
 
 if [ -d "/sys/class/power_supply/BAT0" ]; then
-  battery_formatted="| Battery: "$battery_capacity"% ($battery_status)"
+	battery_capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+	battery_status=$(cat /sys/class/power_supply/BAT0/status)
+	battery_formatted="| Battery: "$battery_capacity"% ($battery_status)"
 fi
 
 # Example: Mon 2024-07-28 09:11:00
