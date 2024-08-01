@@ -34,6 +34,7 @@ Installed:
 - imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
 - zathura
 - xdg-desktop-portal-wlr for screen sharing
+- sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian
 
 TODO:
 - bind workspaces to monitors (use variables for output names)
