@@ -36,11 +36,12 @@ Installed:
 - xdg-desktop-portal-wlr for screen sharing
 
 TODO:
-- https://soyuka.me/make-screen-sharing-wayland-sway-work/
+- bind workspaces to monitors (use variables for output names)
+- investigate swaybar-protocol for asynchronous bar
+- working phone notification forwarding
 - nvim - todo configure kickstart.nvim
 - zsh plugins for additional autocompletion
 - tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode...
-- install notification daemon to handle firefox properly
 - Discord web client or CLI / wayland compatible alternative? (check arch suggestions)
 - setup ssh server securely for use between my laptop / pc (only key auth)
 - debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that https://thevaluable.dev/zsh-install-configure-mouseless/
