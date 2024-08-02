@@ -39,7 +39,7 @@ Installed:
 TODO:
 - bind workspaces to monitors (use variables for output names)
 - investigate swaybar-protocol for asynchronous bar
-- working phone notification forwarding
+- working phone notification forwarding: https://patri9ck.dev/a2ln/
 - nvim - todo configure kickstart.nvim
 - zsh plugins for additional autocompletion
 - tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode...
