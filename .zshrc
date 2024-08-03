@@ -33,7 +33,7 @@ bindkey -v
 bindkey ^R history-incremental-search-backward
 
 # Add custom scripts to path
-export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 # Add Go to PATH
 export PATH=$PATH:/usr/local/go/bin
@@ -46,3 +46,4 @@ export PATH=$PATH:~/.cargo/bin/
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

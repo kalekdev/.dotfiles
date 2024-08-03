@@ -22,6 +22,7 @@ Installed:
 - apt install network-manager for nmcli / nmtui commands - https://stackoverflow.com/a/51282646/12320544 fixed wpa_supplicant conflict
 - zsh
 - pure (manually, npm package installation didnt work)
+- ripgrep
 - nvm
 - go
 - firefox - using their apt repository rather than the slowly updated in debian packages
@@ -35,6 +36,7 @@ Installed:
 - zathura
 - xdg-desktop-portal-wlr for screen sharing
 - sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian
+- a2ln: apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7
 
 TODO:
 - bind workspaces to monitors (use variables for output names)

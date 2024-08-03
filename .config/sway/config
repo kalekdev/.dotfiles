@@ -4,6 +4,9 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 # Start notification manager
 exec mako
 
+# Start android notification server
+exec a2ln
+
 ### Variables
 
 # Logo key
