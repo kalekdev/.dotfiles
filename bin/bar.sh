@@ -3,7 +3,7 @@
 # Example: 1hour, 15 minutes
 uptime_formatted=$(uptime -p | cut -d " " -f2-)
 
-ssid=$(nmcli -t -f active,ssid dev wifi | egrep '^yes' | awk -F: '{print $2} ')
+ssid=$(nmcli -t -f active,ssid dev wifi | egrep '^yes' | awk -F: '{print $2 " "}')
 ip=$(hostname -I | cut -d' ' -f1)
 
 if wpctl status | grep "*" | grep -q 'MUTED'; then
