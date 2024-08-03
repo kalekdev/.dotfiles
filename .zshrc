@@ -26,11 +26,6 @@ alias vi="nvim"
 alias vim="nvim"
 export EDITOR=nvim
 
-# Electron flags
-alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
-alias compass="mongodb-compass --ignore-additional-command-line-flags --ozone-platform-hint=auto"
-alias chrome="google-chrome --ozone-platform-hint=auto"
-
 alias spotify="spotify_player"
 
 # Vim mode

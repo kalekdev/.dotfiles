@@ -4,6 +4,9 @@ export XDG_SESSION_DESKTOP=sway # systemd
 export XDG_SESSION_TYPE=wayland # xdg/systemd
 systemctl --user import-environment XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP XDG_SESSION_TYPE
 
+# https://www.electronjs.org/docs/latest/api/environment-variables#electron_ozone_platform_hint-linux
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
 # Fix missing cursor on nvidia
 export WLR_NO_HARDWARE_CURSORS=1
 [ "$(tty)" = "/dev/tty1" ] && exec sway

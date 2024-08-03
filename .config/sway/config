@@ -26,7 +26,7 @@ set $ctertiary #e3c09d
 
 # TODO: Write script for the inputs, see: https://wiki.archlinux.org/title/Dmenu#Displaying_custom_items
 # TODO: Get vim mode to work
-set $menu echo "firefox\nmongodb-compass --ignore-additional-command-line-flags --ozone-platform-hint=auto" | bemenu -p ">" -H 23 --tf "$cprimary" --ff "$ctext" --nf "$ctext" --fbf "$ctext" --hf "$cprimary" | xargs swaymsg exec --
+set $menu bemenu-run -p ">" -H 23 --tf "$cprimary" --ff "$ctext" --nf "$ctext" --fbf "$ctext" --hf "$cprimary" | xargs swaymsg exec --
 
 client.focused $cprimary $cbg $ctext $csecondary $cprimary
 
