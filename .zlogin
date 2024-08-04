@@ -9,4 +9,5 @@ export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 # Fix missing cursor on nvidia
 export WLR_NO_HARDWARE_CURSORS=1
-[ "$(tty)" = "/dev/tty1" ] && exec sway
+
+[ "$(tty)" = "/dev/tty1" ] && exec sway --unsupported-gpu

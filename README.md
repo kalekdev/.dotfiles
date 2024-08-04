@@ -50,6 +50,9 @@ TODO:
 - debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that https://thevaluable.dev/zsh-install-configure-mouseless/
 - makoctl, add mute notifications keybind to toggle do-not-disturb mode
 
+Nvidia proprietary driver "Found 0 GPUS, cannot created bakend" fixes (DRM kernel mode setting specifically)
+https://wiki.hyprland.org/Nvidia/#drm-kernel-mode-setting
+
 Firefox add apt registry:
 ```bash
 sudo install -d -m 0755 /etc/apt/keyrings
