@@ -39,9 +39,8 @@ Installed:
 - a2ln: apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7
 
 TODO:
-- bind workspaces to monitors (use variables for output names)
+- fix mono compass on nvidia
 - investigate swaybar-protocol for asynchronous bar
-- working phone notification forwarding: https://patri9ck.dev/a2ln/
 - nvim - todo configure kickstart.nvim
 - zsh plugins for additional autocompletion
 - tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode...
@@ -49,6 +48,7 @@ TODO:
 - setup ssh server securely for use between my laptop / pc (only key auth)
 - debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that https://thevaluable.dev/zsh-install-configure-mouseless/
 - makoctl, add mute notifications keybind to toggle do-not-disturb mode
+- nix
 
 Nvidia proprietary driver "Found 0 GPUS, cannot created bakend" fixes (DRM kernel mode setting specifically)
 https://wiki.hyprland.org/Nvidia/#drm-kernel-mode-setting

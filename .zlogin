@@ -10,4 +10,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=auto
 # Fix missing cursor on nvidia
 export WLR_NO_HARDWARE_CURSORS=1
 
+# Nvidia flickering
+export WLR_RENDERER=vulkan
+
 [ "$(tty)" = "/dev/tty1" ] && exec sway --unsupported-gpu
