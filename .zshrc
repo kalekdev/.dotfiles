@@ -28,6 +28,9 @@ export EDITOR=nvim
 
 alias spotify="spotify_player"
 
+# Run mongo compass under XWayland on nvidia: https://issues.chromium.org/issues/334275637
+alias compass="mongodb-compass --ignore-additional-command-line-flags --ozone-platform=x11"
+
 # Vim mode
 bindkey -v
 bindkey ^R history-incremental-search-backward
