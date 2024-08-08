@@ -50,6 +50,9 @@ TODO:
 - makoctl, add mute notifications keybind to toggle do-not-disturb mode
 - nix
 
+Nvim TODO:
+- consider all plugins in kickstart.nvim again: https://github.com/nvim-lua/kickstart.nvim/blob/186018483039b20dc39d7991e4fb28090dd4750e/init.lua
+
 Nvidia proprietary driver "Found 0 GPUS, cannot created bakend" fixes (DRM kernel mode setting specifically)
 https://wiki.hyprland.org/Nvidia/#drm-kernel-mode-setting
 
