@@ -1,7 +1,6 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
---  TODO: Choose something which im not likely to press several times or adjust telescope keybind
-vim.g.mapleader = ";"
-vim.g.maplocalleader = ";"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Make line numbers default
 vim.opt.number = true
@@ -47,20 +46,15 @@ vim.opt.cursorline = true
 -- TODO: Do i really like this
 vim.opt.scrolloff = 10
 
+-- Reduce netrw split width and hide banner
+vim.g.netrw_winsize = 20
+vim.g.netrw_banner = 0
+
 -- [[ Basic Keymaps ]]
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
--- Keybinds to make split navigation easier.
---  Use CTRL+<hjkl> to switch between windows
---
---  See `:help wincmd` for a list of all window commands
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -111,26 +105,10 @@ require("lazy").setup({
 			config = function()
 				-- [[ Configure Telescope ]]
 				-- See `:help telescope` and `:help telescope.setup()`
-				require("telescope").setup({
-					-- You can put your default mappings / updates / etc. in here
-					--  All the info you're looking for is in `:help telescope.setup()`
-					--
-					-- defaults = {
-					--   mappings = {
-					--     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-					--   },
-					-- },
-					-- pickers = {}
-					extensions = {
-						["ui-select"] = {
-							require("telescope.themes").get_dropdown(),
-						},
-					},
-				})
+				require("telescope").setup()
 
 				-- Enable Telescope extensions if they are installed
-				-- pcall(require("telescope").load_extension, "fzf")
-				-- pcall(require("telescope").load_extension, "ui-select")
+				pcall(require("telescope").load_extension, "fzf")
 
 				-- See `:help telescope.builtin`
 				local builtin = require("telescope.builtin")
@@ -182,6 +160,13 @@ require("lazy").setup({
 					indent = { enable = true },
 				})
 			end,
+		},
+		{
+			"windwp/nvim-autopairs",
+			event = "InsertEnter",
+			config = true,
+			-- use opts = {} for passing setup options
+			-- this is equalent to setup({}) function
 		},
 		{
 			-- Main LSP Configuration
@@ -326,19 +311,7 @@ require("lazy").setup({
 				--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 				local servers =
 					{
-						-- clangd = {},
-						-- gopls = {},
-						-- pyright = {},
-						-- rust_analyzer = {},
-						-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
-						--
-						-- Some languages (like typescript) have entire language plugins that can be useful:
-						--    https://github.com/pmizio/typescript-tools.nvim
-						--
-						-- But for many setups, the LSP (`tsserver`) will work just fine
-						-- tsserver = {},
-						--
-
+						-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 						lua_ls = {
 							settings = {
 								Lua = {
@@ -352,6 +325,8 @@ require("lazy").setup({
 						},
 
 						tsserver = {},
+						gopls = {},
+						bufls = {},
 					},
 					-- Ensure the servers and tools above are installed
 					--  To check the current status of installed tools and/or manually install
@@ -366,6 +341,7 @@ require("lazy").setup({
 				local ensure_installed = vim.tbl_keys(servers or {})
 				vim.list_extend(ensure_installed, {
 					"stylua", -- Used to format Lua code
+					"eslint_d",
 				})
 				require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
@@ -390,16 +366,10 @@ require("lazy").setup({
 			event = { "BufWritePre" },
 			cmd = { "ConformInfo" },
 			opts = {
-				format_on_save = function(bufnr)
-					-- Disable "format_on_save lsp_fallback" for languages that don't
-					-- have a well standardized coding style. You can add additional
-					-- languages here or re-enable it for the disabled ones.
-					local disable_filetypes = { c = true, cpp = true }
-					return {
-						timeout_ms = 500,
-						lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
-					}
-				end,
+				format_on_save = {
+					timeout_ms = 500,
+					lsp_fallback = true,
+				},
 				formatters_by_ft = {
 					lua = { "stylua" },
 					-- Conform can also run multiple formatters sequentially
@@ -407,6 +377,7 @@ require("lazy").setup({
 					--
 					-- You can use 'stop_after_first' to run the first available formatter from the list
 					javascript = { "eslint_d" },
+					vue = { "eslint_d" },
 				},
 			},
 		},
