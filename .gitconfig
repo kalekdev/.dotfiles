@@ -7,3 +7,10 @@
 	autoSetupRemote = true
 [init]
 	defaultBranch = main
+[diff]
+	tool = nvimdiff
+[difftool]
+	prompt = false
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[alias]
+	d = difftool

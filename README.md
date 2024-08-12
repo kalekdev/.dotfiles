@@ -39,9 +39,8 @@ Installed:
 - a2ln: apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7
 
 TODO:
-- fix mono compass on nvidia
+- Extend nvim text objects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects or https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md
 - investigate swaybar-protocol for asynchronous bar
-- nvim - todo configure kickstart.nvim
 - zsh plugins for additional autocompletion
 - tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode...
 - Discord web client or CLI / wayland compatible alternative? (check arch suggestions)

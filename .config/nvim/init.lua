@@ -88,6 +88,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	spec = {
 		"tpope/vim-sleuth",
+		{ "wakatime/vim-wakatime", lazy = false },
 		{
 			"nvim-telescope/telescope.nvim",
 			event = "VimEnter",
