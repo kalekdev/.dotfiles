@@ -72,3 +72,7 @@ sudo apt-get update && sudo apt-get install firefox
 Bluetooth USB dongle fix: https://askubuntu.com/questions/1339825/ubuntu-21-04-bluetooth-5-0-dongle-does-not-work-and-says-theres-no-firmware
 
 Firefox audio playback fix: https://wiki.debian.org/ffmpeg
+
+Battery life test:
+Normal usage from 100% HP Pavilion - 2 hours 25 mins
+TLP normal usage - 2 hours 45 mins

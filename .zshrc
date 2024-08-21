@@ -20,6 +20,9 @@ alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 # Pre poweroff confirmation
 alias poweroff="poweroff.sh"
 
+# Change timezone
+alias timezone="sudo dpkg-reconfigure tzdata"
+
 # Neovim aliases
 alias v="nvim"
 alias vi="nvim"
