@@ -14,6 +14,11 @@ prompt pure
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# Fix slow git autocomplete
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
+
 # Used for managing dotfiles repo: https://www.atlassian.com/git/tutorials/dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
