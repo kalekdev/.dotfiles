@@ -280,6 +280,12 @@ require("lazy").setup({
 						tsserver = {},
 						gopls = {},
 						bufls = {},
+						typst_lsp = {
+							settings = {
+								exportPdf = "onSave",
+								experimentalFormatterMode = "on",
+							},
+						},
 					},
 					-- Ensure the servers and tools above are installed
 					--  To check the current status of installed tools and/or manually install
