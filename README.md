@@ -23,13 +23,15 @@ Installed:
 - zsh
 - pure (manually, npm package installation didnt work)
 - ripgrep
+- fonts-recommended
+- typst
 - nvm
 - go
 - firefox - using their apt repository rather than the slowly updated in debian packages
 - pipewire
 - spotify_player - using pulseaudio backend, works fine with pipewire 
 - vscode - with microsoft apt repo
-- bemenu
+- bemenu - make sure to use new version for vim bindings to work
 - grimshot
 - mako-notifier
 - imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
@@ -39,6 +41,7 @@ Installed:
 - a2ln: apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7
 
 TODO:
+- Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/
 - Check out helix text editor
 - Extend nvim text objects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects or https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md
 - Disable laptop keyboard upon udev rule not in sway config: https://www.reddit.com/r/swaywm/comments/y3wnrx/key_shortcut_to_disablepower_off_notebook_keyboard/ https://www.reddit.com/r/swaywm/comments/nui8gg/how_to_disable_laptop_keyboard_when_external/
@@ -50,9 +53,6 @@ TODO:
 - debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that https://thevaluable.dev/zsh-install-configure-mouseless/
 - makoctl, add mute notifications keybind to toggle do-not-disturb mode
 - nix
-
-Nvim TODO:
-- consider all plugins in kickstart.nvim again: https://github.com/nvim-lua/kickstart.nvim/blob/186018483039b20dc39d7991e4fb28090dd4750e/init.lua
 
 Nvidia proprietary driver "Found 0 GPUS, cannot created bakend" fixes (DRM kernel mode setting specifically)
 https://wiki.hyprland.org/Nvidia/#drm-kernel-mode-setting
