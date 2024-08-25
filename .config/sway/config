@@ -27,7 +27,12 @@ set $cprimary #dd6345
 set $csecondary #e39776
 set $ctertiary #e3c09d
 
-set $menu bash -c "compgen -ac" | bemenu -p ">" --binding vim -H 23 --tf "$cprimary" --ff "$ctext" --nf "$ctext" --fbf "$ctext" --hf "$cprimary" | xargs swaymsg exec --
+# TODO: Fix duplicate items in compgen / make it work through zsh
+# TODO: Patch Tab for completing the currently selected item: 
+# https://wiki.archlinux.org/title/Patching_packages
+# https://github.com/Cloudef/bemenu/issues/104
+# set $menu bash -c "compgen -ac" | bemenu -p ">" --binding vim -H 23 --tf "$cprimary" --ff "$ctext" --nf "$ctext" --fbf "$ctext" --hf "$cprimary" | xargs swaymsg exec --
+set $menu bemenu-run -p ">" --binding vim -H 23 --tf "$cprimary" --ff "$ctext" --nf "$ctext" --fbf "$ctext" --hf "$cprimary" | xargs swaymsg exec --
 
 client.focused $cprimary $cbg $ctext $csecondary $cprimary
 
