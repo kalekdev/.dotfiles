@@ -35,6 +35,7 @@ Installed:
 - grimshot
 - mako-notifier
 - imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
+- mpv
 - zathura
 - xdg-desktop-portal-wlr for screen sharing
 - sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian

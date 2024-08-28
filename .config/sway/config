@@ -82,9 +82,11 @@ bindswitch --locked lid:on exec $lock
 input type:touchpad {	
 	tap enabled
 	natural_scroll enabled
+        pointer_accel 0.4
+        accel_profile flat
 }
 
-input 1:1:AT_Translated_Set_2_keyboard events disabled
+# input 1:1:AT_Translated_Set_2_keyboard events disabled
 
 ### Key bindings
 #
