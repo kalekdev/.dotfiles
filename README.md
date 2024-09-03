@@ -76,6 +76,8 @@ Bluetooth USB dongle fix: https://askubuntu.com/questions/1339825/ubuntu-21-04-b
 
 Firefox audio playback fix: https://wiki.debian.org/ffmpeg
 
+Eduroam wifi fix: https://www.reddit.com/r/archlinux/comments/pb3r0f/cannot_connect_to_college_wifi_using/
+
 Battery life test:
 Normal usage from 100% HP Pavilion - 2 hours 25 mins
 TLP normal usage - 2 hours 45 mins
