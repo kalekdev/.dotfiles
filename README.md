@@ -39,7 +39,7 @@ Installed:
 - zathura
 - xdg-desktop-portal-wlr for screen sharing
 - sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian
-- a2ln: apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7
+- a2ln: sudo apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7 python3-dev && pipx install a2ln
 
 TODO:
 - Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/
