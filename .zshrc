@@ -19,6 +19,9 @@ __git_files () {
     _wanted files expl 'local files' _files     
 }
 
+# Echo full path of a file
+alias rl="readlink -f"
+
 # Used for managing dotfiles repo: https://www.atlassian.com/git/tutorials/dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 

@@ -7,10 +7,12 @@ systemctl --user import-environment XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP XDG_
 # https://www.electronjs.org/docs/latest/api/environment-variables#electron_ozone_platform_hint-linux
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 
+export QT_QPA_PLATFORM=xcb
+
 # Fix missing cursor on nvidia
 export WLR_NO_HARDWARE_CURSORS=1
 
 # Nvidia flickering
-export WLR_RENDERER=vulkan
+#export WLR_RENDERER=vulkan
 
 [ "$(tty)" = "/dev/tty1" ] && exec sway --unsupported-gpu

@@ -277,7 +277,7 @@ require("lazy").setup({
 							},
 						},
 
-						tsserver = {},
+						ts_ls = {},
 						gopls = {},
 						bufls = {},
 						typst_lsp = {
@@ -308,11 +308,6 @@ require("lazy").setup({
 					handlers = {
 						function(server_name)
 							local server = servers[server_name] or {}
-
-							-- https://github.com/neovim/nvim-lspconfig/pull/3232
-							if server_name == "tsserver" then
-								server_name = "ts_ls"
-							end
 
 							-- This handles overriding only values explicitly passed
 							-- by the server configuration above. Useful when disabling
