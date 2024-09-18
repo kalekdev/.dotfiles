@@ -37,7 +37,13 @@ alias vi="nvim"
 alias vim="nvim"
 export EDITOR=nvim
 
+# Zathura alias
+alias z="zathura"
+
 alias spotify="spotify_player"
+
+# ETHZ vpn
+alias eth="gtk-launch com.cisco.secureclient.gui"
 
 # Run mongo compass under XWayland on nvidia: https://issues.chromium.org/issues/334275637
 alias compass="mongodb-compass --ignore-additional-command-line-flags --ozone-platform=x11"
