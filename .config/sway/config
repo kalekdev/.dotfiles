@@ -55,16 +55,15 @@ set $osecondary "eDP-1"
 output $oprimary mode 1920x1080@144Hz pos 0 0
 
 workspace 1 output $oprimary
-# workspace 3 output $oprimary
-# workspace 5 output $oprimary
-# workspace 7 output $oprimary
-# workspace 9 output $oprimary
-# 
-# workspace 2 output $osecondary
-# workspace 4 output $osecondary
-# workspace 6 output $osecondary
-# workspace 8 output $osecondary
-# workspace 10 output $osecondary
+workspace 3 output $oprimary
+workspace 5 output $oprimary
+workspace 7 output $oprimary
+workspace 9 output $osecondary
+
+workspace 2 output $oprimary
+workspace 4 output $oprimary
+workspace 6 output $oprimary
+workspace 8 output $oprimary
 
 ### Idle configuration
 
@@ -88,7 +87,7 @@ input type:touchpad {
         accel_profile flat
 }
 
-# input 1:1:AT_Translated_Set_2_keyboard events disabled
+input 1:1:AT_Translated_Set_2_keyboard events disabled
 
 ### Key bindings
 #
