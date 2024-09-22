@@ -56,6 +56,9 @@ vim.g.netrw_banner = 0
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+-- Open current buffer's compiled pdf for use with typst
+vim.keymap.set("n", "<leader>z", ":silent !zathura --fork %:r.pdf<CR>")
+
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
@@ -165,9 +168,15 @@ require("lazy").setup({
 		{
 			"windwp/nvim-autopairs",
 			event = "InsertEnter",
-			config = true,
-			-- use opts = {} for passing setup options
-			-- this is equalent to setup({}) function
+			config = function()
+				require("nvim-autopairs").setup({})
+				local npairs = require("nvim-autopairs")
+				local Rule = require("nvim-autopairs.rule")
+
+				npairs.add_rule(Rule("$", "$", "typst"):with_move(function(opts)
+					return opts.next_char == opts.char
+				end))
+			end,
 		},
 		{
 			-- Main LSP Configuration
@@ -276,14 +285,14 @@ require("lazy").setup({
 								},
 							},
 						},
-
 						ts_ls = {},
 						gopls = {},
 						bufls = {},
-						typst_lsp = {
+						tinymist = {
+							single_file_support = true,
 							settings = {
 								exportPdf = "onSave",
-								experimentalFormatterMode = "on",
+								formatterMode = "typstyle",
 							},
 						},
 						clangd = {},

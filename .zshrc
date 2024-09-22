@@ -38,7 +38,7 @@ alias vim="nvim"
 export EDITOR=nvim
 
 # Zathura alias
-alias z="zathura"
+alias z="zathura --fork"
 
 alias spotify="spotify_player"
 
