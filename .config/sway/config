@@ -87,7 +87,9 @@ input type:touchpad {
         accel_profile flat
 }
 
-input 1:1:AT_Translated_Set_2_keyboard events disabled
+# International layout
+input * xkb_layout us(altgr-intl)
+#input 1:1:AT_Translated_Set_2_keyboard events disabled
 
 ### Key bindings
 #
