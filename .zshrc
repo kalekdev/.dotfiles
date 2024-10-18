@@ -48,6 +48,10 @@ alias eth="gtk-launch com.cisco.secureclient.gui"
 # Run mongo compass under XWayland on nvidia: https://issues.chromium.org/issues/334275637
 alias compass="mongodb-compass --ignore-additional-command-line-flags --ozone-platform=x11"
 
+alias ltspice="wine /home/kalek/.wine/dosdevices/c:/users/kalek/AppData/Local/Programs/ADI/LTspice/LTspice.exe"
+
+alias gst="grimshot save area"
+
 # Vim mode
 bindkey -v
 bindkey ^R history-incremental-search-backward
