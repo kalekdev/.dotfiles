@@ -37,13 +37,13 @@ Installed:
 - imv - sudo mv /usr/libexec/imv/imv /usr/bin/imv
 - mpv
 - zathura
-- xdg-desktop-portal-wlr for screen sharing
+- xdg-desktop-portal-wlr for screen sharing & fixes lagginess after sleeping
 - sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian
 - a2ln: sudo apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7 python3-dev && pipx install a2ln
 
 TODO:
 - Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/
-- Check out helix text editor
+- Check out helix / kakoune text editors
 - Extend nvim text objects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects or https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md
 - Disable laptop keyboard upon udev rule not in sway config: https://www.reddit.com/r/swaywm/comments/y3wnrx/key_shortcut_to_disablepower_off_notebook_keyboard/ https://www.reddit.com/r/swaywm/comments/nui8gg/how_to_disable_laptop_keyboard_when_external/
 - investigate swaybar-protocol for asynchronous bar
