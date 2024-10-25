@@ -43,8 +43,7 @@ vim.opt.inccommand = "split"
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
--- TODO: Do i really like this
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 
 -- Reduce netrw split width and hide banner
 vim.g.netrw_winsize = 20
