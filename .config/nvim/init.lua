@@ -442,6 +442,29 @@ require("lazy").setup({
 				})
 			end,
 		},
+		{
+			"HakonHarnes/img-clip.nvim",
+			event = "VeryLazy",
+			opts = {
+				default = {
+					dir_path = "images",
+				},
+				filetypes = {
+					typst = {
+						template = [[
+
+#figure(
+  image("$FILE_PATH", width: 60%),
+) <fig-$LABEL>
+						]],
+					},
+				},
+			},
+			keys = {
+				-- suggested keymap
+				{ "<leader>p", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
+			},
+		},
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
