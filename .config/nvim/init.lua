@@ -286,7 +286,6 @@ require("lazy").setup({
 						},
 						ts_ls = {},
 						gopls = {},
-						bufls = {},
 						tinymist = {
 							single_file_support = true,
 							settings = {
