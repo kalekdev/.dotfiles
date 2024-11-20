@@ -171,10 +171,10 @@ require("lazy").setup({
 				require("nvim-autopairs").setup({})
 				local npairs = require("nvim-autopairs")
 				local Rule = require("nvim-autopairs.rule")
+				local cond = require("nvim-autopairs.conds")
 
-				npairs.add_rule(Rule("$", "$", "typst"):with_move(function(opts)
-					return opts.next_char == opts.char
-				end))
+				-- Only add pair if there's no text immediately after the cursor
+				npairs.add_rule(Rule("$", "$", { "typst" }):with_pair(cond.not_after_regex("[a-z]", -1)))
 			end,
 		},
 		{
