@@ -25,11 +25,11 @@ if [ -d "/sys/class/power_supply/BAT0" ]; then
 	battery_capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 	battery_status=$(cat /sys/class/power_supply/BAT0/status)
 	battery_formatted=" | Battery: "$battery_capacity"% ($battery_status)"
-fi
 
-if [[ "$battery_capacity" -lt "15" && "$battery_status" != "Charging" ]]; then
-  # Disappears in 450ms, just before this script is executed again
-  notify-send -u critical -t 450 -i ~/despair.png "Battery Low!"
+	if [[ "$battery_capacity" -lt "15" && "$battery_status" != "Charging" ]]; then
+	  # Disappears in 450ms, just before this script is executed again
+	  notify-send -u critical -t 450 -i ~/despair.png "Battery Low!"
+	fi
 fi
 
 # Example: Mon 2024-07-28 09:11:00
