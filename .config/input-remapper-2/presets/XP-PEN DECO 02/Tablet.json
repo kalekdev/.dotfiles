@@ -1,0 +1,143 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 48,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L+1",
+        "name": "Btn1",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 57,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L+2",
+        "name": "Btn2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 18,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L+4",
+        "name": "Btn3",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            },
+            {
+                "type": 1,
+                "code": 13,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Down",
+        "name": "Clockwise",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            },
+            {
+                "type": 1,
+                "code": 12,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_UP",
+        "name": "Anticlockwise",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 23,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L+z",
+        "name": "Btn4",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 331,
+                "origin_hash": "8d1695aa77946355406bfdead86e13a7"
+            }
+        ],
+        "target_uinput": "mouse",
+        "output_symbol": "BTN_RIGHT",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            },
+            {
+                "type": 1,
+                "code": 56,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            },
+            {
+                "type": 1,
+                "code": 44,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "mouse",
+        "output_symbol": "BTN_EXTRA",
+        "name": "Btn5",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            },
+            {
+                "type": 1,
+                "code": 31,
+                "origin_hash": "e7707fa2a32120543738a1b40050fea1"
+            }
+        ],
+        "target_uinput": "mouse",
+        "output_symbol": "BTN_SIDE",
+        "name": "Btn6",
+        "mapping_type": "key_macro"
+    }
+]
