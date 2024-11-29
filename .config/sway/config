@@ -1,6 +1,9 @@
 # Set variable needed for screen sharing
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
+# Load input-remapper configs
+exec input-remapper-control --command autoload
+
 # Start notification manager
 exec mako
 

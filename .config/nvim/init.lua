@@ -51,6 +51,11 @@ vim.g.netrw_banner = 0
 
 -- [[ Basic Keymaps ]]
 
+-- Don't replace clipboard when pasting in visual mode
+vim.keymap.set("x", "p", function()
+	return 'pgv"' .. vim.v.register .. "y"
+end, { remap = false, expr = true })
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
