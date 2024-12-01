@@ -34,7 +34,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Super_L+4",
+        "output_symbol": "Super_L+3",
         "name": "Btn3",
         "mapping_type": "key_macro"
     },
@@ -83,7 +83,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "Control_L+z",
+        "output_symbol": "Super_L+4",
         "name": "Btn4",
         "mapping_type": "key_macro"
     },
@@ -117,8 +117,8 @@
                 "origin_hash": "e7707fa2a32120543738a1b40050fea1"
             }
         ],
-        "target_uinput": "mouse",
-        "output_symbol": "BTN_EXTRA",
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L+z",
         "name": "Btn5",
         "mapping_type": "key_macro"
     },
@@ -135,8 +135,8 @@
                 "origin_hash": "e7707fa2a32120543738a1b40050fea1"
             }
         ],
-        "target_uinput": "mouse",
-        "output_symbol": "BTN_SIDE",
+        "target_uinput": "keyboard",
+        "output_symbol": "Escape",
         "name": "Btn6",
         "mapping_type": "key_macro"
     }
