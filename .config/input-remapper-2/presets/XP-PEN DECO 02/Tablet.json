@@ -51,8 +51,8 @@
                 "origin_hash": "e7707fa2a32120543738a1b40050fea1"
             }
         ],
-        "target_uinput": "keyboard",
-        "output_symbol": "Down",
+        "target_uinput": "mouse",
+        "output_symbol": "wheel(down, 50)",
         "name": "Clockwise",
         "mapping_type": "key_macro"
     },
@@ -69,8 +69,8 @@
                 "origin_hash": "e7707fa2a32120543738a1b40050fea1"
             }
         ],
-        "target_uinput": "keyboard",
-        "output_symbol": "KEY_UP",
+        "target_uinput": "mouse",
+        "output_symbol": "wheel(up, 50)",
         "name": "Anticlockwise",
         "mapping_type": "key_macro"
     },
