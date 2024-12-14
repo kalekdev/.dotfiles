@@ -91,18 +91,6 @@
         "input_combination": [
             {
                 "type": 1,
-                "code": 331,
-                "origin_hash": "8d1695aa77946355406bfdead86e13a7"
-            }
-        ],
-        "target_uinput": "mouse",
-        "output_symbol": "BTN_RIGHT",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
                 "code": 29,
                 "origin_hash": "e7707fa2a32120543738a1b40050fea1"
             },
@@ -138,6 +126,23 @@
         "target_uinput": "keyboard",
         "output_symbol": "Super_L + Alt_L + p",
         "name": "Btn6",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 320,
+                "origin_hash": "8d1695aa77946355406bfdead86e13a7"
+            },
+            {
+                "type": 1,
+                "code": 331,
+                "origin_hash": "8d1695aa77946355406bfdead86e13a7"
+            }
+        ],
+        "target_uinput": "mouse",
+        "output_symbol": "BTN_RIGHT",
         "mapping_type": "key_macro"
     }
 ]
