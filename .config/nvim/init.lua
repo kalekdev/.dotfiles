@@ -45,6 +45,10 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 8
 
+-- Spell-Checker
+vim.opt.spelllang = "en_us,de_ch"
+vim.opt.spell = true
+
 -- Reduce netrw split width and hide banner
 vim.g.netrw_winsize = 20
 vim.g.netrw_banner = 0
