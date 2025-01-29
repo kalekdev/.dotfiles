@@ -52,6 +52,8 @@ alias ltspice="wine /home/kalek/.wine/dosdevices/c:/users/kalek/AppData/Local/Pr
 
 alias gst="grimshot save area"
 
+alias imv="imv-wayland"
+
 # Vim mode
 bindkey -v
 bindkey ^R history-incremental-search-backward
