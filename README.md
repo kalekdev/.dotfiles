@@ -40,7 +40,7 @@ Installed:
 - xdg-desktop-portal-wlr for screen sharing & fixes lagginess after sleeping
 - sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian
 - a2ln: sudo apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7 python3-dev && pipx install a2ln
-- input-remapper
+- input-remapper version 2 (debian 12 repo outdated)
 
 TODO:
 - Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/
@@ -75,10 +75,12 @@ sudo apt-get update && sudo apt-get install firefox
 
 Bluetooth USB dongle fix: https://askubuntu.com/questions/1339825/ubuntu-21-04-bluetooth-5-0-dongle-does-not-work-and-says-theres-no-firmware
 
-Firefox audio playback fix: https://wiki.debian.org/ffmpeg
+Firefox audio playback fix: install ffmpeg
 
 Eduroam wifi fix: https://www.reddit.com/r/archlinux/comments/pb3r0f/cannot_connect_to_college_wifi_using/
 
 Battery life test:
 Normal usage from 100% HP Pavilion - 2 hours 25 mins
 TLP normal usage - 2 hours 45 mins
+
+Run GUI apps as root (input-remapper) https://github.com/swaywm/sway/wiki#wayland-wont-let-me-run-apps-as-root
