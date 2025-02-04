@@ -7,6 +7,8 @@
 	autoSetupRemote = true
 [init]
 	defaultBranch = main
+[pull]
+	ff = only
 [diff]
 	tool = nvimdiff
 [difftool]
@@ -14,5 +16,9 @@
 	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [alias]
 	d = difftool
-[pull]
-	ff = only
+	s = status
+	a = add
+	c = commit
+	ch = checkout
+	pl = pull
+	ps = push

@@ -46,15 +46,13 @@ TODO:
 - Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/
 - Check out helix / kakoune text editors
 - Extend nvim text objects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects or https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-ai.md
-- Disable laptop keyboard upon udev rule not in sway config: https://www.reddit.com/r/swaywm/comments/y3wnrx/key_shortcut_to_disablepower_off_notebook_keyboard/ https://www.reddit.com/r/swaywm/comments/nui8gg/how_to_disable_laptop_keyboard_when_external/
 - investigate swaybar-protocol for asynchronous bar
 - zsh plugins for additional autocompletion
-- tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode...
-- Discord web client or CLI / wayland compatible alternative? (check arch suggestions)
+- tmux vs control through sway? https://github.com/jabirali/tmux-tilish one thing i miss from tmux is the copy mode... investigate foot scroll / copy keybindings
 - setup ssh server securely for use between my laptop / pc (only key auth)
-- debloat zsh, investigate if ohmyzsh is needed at all. key is to reduce dependencies and ready to go on any pc just like that https://thevaluable.dev/zsh-install-configure-mouseless/
 - makoctl, add mute notifications keybind to toggle do-not-disturb mode
 - nix
+- Compare input-remapper versions
 
 Nvidia proprietary driver "Found 0 GPUS, cannot created bakend" fixes (DRM kernel mode setting specifically)
 https://wiki.hyprland.org/Nvidia/#drm-kernel-mode-setting

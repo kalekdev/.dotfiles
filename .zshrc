@@ -31,6 +31,8 @@ alias poweroff="poweroff.sh"
 # Change timezone
 alias timezone="sudo dpkg-reconfigure tzdata"
 
+alias g="git"
+
 # Neovim aliases
 alias v="nvim"
 alias vi="nvim"
@@ -44,11 +46,6 @@ alias spotify="spotify_player"
 
 # ETHZ vpn
 alias eth="gtk-launch com.cisco.secureclient.gui"
-
-# Run mongo compass under XWayland on nvidia: https://issues.chromium.org/issues/334275637
-alias compass="mongodb-compass --ignore-additional-command-line-flags --ozone-platform=x11"
-
-alias ltspice="wine /home/kalek/.wine/dosdevices/c:/users/kalek/AppData/Local/Programs/ADI/LTspice/LTspice.exe"
 
 alias gst="grimshot save area"
 
