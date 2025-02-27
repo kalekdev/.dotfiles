@@ -82,3 +82,5 @@ Normal usage from 100% HP Pavilion - 2 hours 25 mins
 TLP normal usage - 2 hours 45 mins
 
 Run GUI apps as root (input-remapper) https://github.com/swaywm/sway/wiki#wayland-wont-let-me-run-apps-as-root
+
+`nmcli radio wifi on` to enable wifi again

@@ -31,6 +31,10 @@ alias poweroff="poweroff.sh"
 # Change timezone
 alias timezone="sudo dpkg-reconfigure tzdata"
 
+alias a="sudo apt"
+alias au="sudo apt update && sudo apt upgrade"
+alias ai="sudo apt install"
+
 alias g="git"
 
 # Neovim aliases
