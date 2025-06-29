@@ -293,7 +293,6 @@ require("lazy").setup({
 								},
 							},
 						},
-						volar = {},
 						ts_ls = {
 							filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 							init_options = {
@@ -312,7 +311,7 @@ require("lazy").setup({
 						tinymist = {
 							single_file_support = true,
 							settings = {
-								exportPdf = "onSave",
+								exportPdf = "onType",
 								formatterMode = "typstyle",
 							},
 						},
