@@ -23,7 +23,7 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- Decrease update time
+-- Decrease update time to fix SSH
 vim.opt.updatetime = 250
 
 -- Configure how new splits should be opened
@@ -66,6 +66,14 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Open current buffer's compiled pdf for use with typst
 vim.keymap.set("n", "<leader>z", ":silent !zathura --fork %:r.pdf<CR>")
+
+-- Paste from system clipboard with all line breaks removed
+vim.keymap.set("n", "<leader>cp", function()
+	local clip = vim.fn.getreg("+")
+	local clean = string.gsub(clip, "\n", "")
+	-- Insert the cleaned string at the cursor position
+	vim.api.nvim_put({ clean }, "c", true, true)
+end, { desc = "Paste clipboard content without newlines" })
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
