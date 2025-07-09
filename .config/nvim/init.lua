@@ -301,20 +301,20 @@ require("lazy").setup({
 								},
 							},
 						},
-						ts_ls = {
-							filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-							init_options = {
-								plugins = {
-									{
-										name = "@vue/typescript-plugin",
-										location = vim.fn.stdpath("data")
-											.. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
-										languages = { "vue" },
-									},
-								},
-							},
-						},
-						tailwindcss = {},
+						-- ts_ls = {
+						-- 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+						-- 	init_options = {
+						-- 		plugins = {
+						-- 			{
+						-- 				name = "@vue/typescript-plugin",
+						-- 				location = vim.fn.stdpath("data")
+						-- 					.. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
+						-- 				languages = { "vue" },
+						-- 			},
+						-- 		},
+						-- 	},
+						-- },
+						-- tailwindcss = {},
 						gopls = {},
 						tinymist = {
 							single_file_support = true,
@@ -323,8 +323,8 @@ require("lazy").setup({
 								formatterMode = "typstyle",
 							},
 						},
-						clangd = {},
-						hls = {},
+						-- clangd = {},
+						-- hls = {},
 					},
 					-- Ensure the servers and tools above are installed
 					--  To check the current status of installed tools and/or manually install
@@ -339,7 +339,7 @@ require("lazy").setup({
 				local ensure_installed = vim.tbl_keys(servers or {})
 				vim.list_extend(ensure_installed, {
 					"stylua", -- Used to format Lua code
-					"eslint_d",
+					-- "eslint_d",
 				})
 				require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
