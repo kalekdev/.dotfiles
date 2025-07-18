@@ -21,8 +21,6 @@ set $down j
 set $up k
 set $right l
 
-set $term foot
-
 # Colors
 set $ctext #eee2e2
 set $cbg #b83b1c
@@ -99,7 +97,7 @@ input * xkb_layout us(altgr-intl)
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec ~/bin/cwd-terminal.sh
 
     # Kill focused window
     bindsym $mod+Alt+Return kill

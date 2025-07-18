@@ -23,7 +23,7 @@ __git_files () {
 alias rl="readlink -f"
 
 # Used for managing dotfiles repo: https://www.atlassian.com/git/tutorials/dotfiles
-alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias c="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 # Pre poweroff confirmation
 alias poweroff="poweroff.sh"

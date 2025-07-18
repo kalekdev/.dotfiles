@@ -9,8 +9,8 @@ Firstly install git, zsh and pure.
 2. `git clone --bare git@github.com:kalekdev/.dotfiles.git $HOME/.cfg`
 3. `git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout`
 4. Restart shell
-5. `config config --local status.showUntrackedFiles no`
-6. Good to go! Manage dotfiles using the config alias.
+5. `c config --local status.showUntrackedFiles no`
+6. Good to go! Manage dotfiles using the c alias.
 
 ### System information
 Debian 12 "bookworm"
