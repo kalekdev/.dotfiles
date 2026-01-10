@@ -43,6 +43,7 @@ Installed:
 - input-remapper version 2 (debian 12 repo outdated)
 - direnv
 - entr
+- jmtpfs for mounting MTP protocol devices. Run `jmtpfs TARGET_MOUNT_DIR` to mount the first available MTP device. No need to unmount
 
 TODO:
 - Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/
