@@ -88,3 +88,10 @@ TLP normal usage - 2 hours 45 mins
 Run GUI apps as root (input-remapper) https://github.com/swaywm/sway/wiki#wayland-wont-let-me-run-apps-as-root
 
 `nmcli radio wifi on` to enable wifi again
+
+`swaymsg opacity 0.5` useful for screenshots
+
+Use IPwebcam:
+Setup https://github.com/agarciadom/ipwebcam-gst
+install pulseaudio-utils
+run ./run-videochat.sh --use-wifi WEBCAMIP -v
