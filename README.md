@@ -78,7 +78,19 @@ Bluetooth USB dongle fix: https://askubuntu.com/questions/1339825/ubuntu-21-04-b
 
 Firefox audio playback fix: install ffmpeg
 
-Eduroam wifi fix: https://www.reddit.com/r/archlinux/comments/pb3r0f/cannot_connect_to_college_wifi_using/
+Setup eduroam:
+1. `nmcli con add type wifi con-name "eduroam" ssid "eduroam"`
+2. `nmcli con edit eduroam`
+```
+set 802-1x.eap peap
+set 802-1x.phase2-auth mschapv2
+set 802-1x.identity USERNAME@student-net.ethz.ch
+set 802-1x.password PASSWORD
+set wifi-sec.key-mgmt wpa-eap
+save
+activate
+```
+ctrl+d to exit
 
 Battery life test:
 Normal usage from 100% HP Pavilion - 2 hours 25 mins
