@@ -49,22 +49,13 @@ include /etc/sway/config.d/*
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg $HOME/wallpaper.png fill
 
-set $oprimary "HDMI-A-1"
-set $osecondary "eDP-1"
-# set $oprimary "DP-1"
-# set $osecondary "HDMI-A-1"
-output $oprimary mode 1920x1080@144Hz pos 0 0
+# Positions laptop screen centrally below external ultrawide display
+set $olaptop "eDP-1"
+output * position 0,0
+output $olaptop position 800 1440 scale 1.5
 
-workspace 1 output $oprimary
-workspace 3 output $oprimary
-workspace 5 output $oprimary
-workspace 7 output $oprimary
-workspace 9 output $osecondary
-
-workspace 2 output $oprimary
-workspace 4 output $oprimary
-workspace 6 output $oprimary
-workspace 8 output $oprimary
+# Lock workspace 10 to laptop if external display connected, all others on external display
+workspace 10 output $olaptop
 
 ### Idle configuration
 
