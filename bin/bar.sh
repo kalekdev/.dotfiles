@@ -21,9 +21,9 @@ else
 fi
 
 
-if [ -d "/sys/class/power_supply/BAT0" ]; then
-	battery_capacity=$(cat /sys/class/power_supply/BAT0/capacity)
-	battery_status=$(cat /sys/class/power_supply/BAT0/status)
+if [ -d "/sys/class/power_supply/BAT1" ]; then
+	battery_capacity=$(cat /sys/class/power_supply/BAT1/capacity)
+	battery_status=$(cat /sys/class/power_supply/BAT1/status)
 	battery_formatted=" | Battery: "$battery_capacity"% ($battery_status)"
 
 	if [[ "$battery_capacity" -lt "30" && "$battery_status" != "Charging" ]]; then

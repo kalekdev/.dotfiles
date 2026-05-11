@@ -3,7 +3,7 @@
 ### Installation
 Tutorial: https://www.atlassian.com/git/tutorials/dotfiles
 
-Firstly install git, zsh and pure.
+Firstly setup ssh key (git only allows cloning with registered ssh key even if public). Install git
 
 1. Delete any conflicting dotfiles
 2. `git clone --bare git@github.com:kalekdev/.dotfiles.git $HOME/.cfg`
@@ -18,13 +18,13 @@ Debian 12 "bookworm"
 Installed:
 - sway
 - swaylock
-- brightness-ctl
+- brightnessctl
 - apt install network-manager for nmcli / nmtui commands - https://stackoverflow.com/a/51282646/12320544 fixed wpa_supplicant conflict
-- zsh
+- zsh, change to default shell
 - pure (manually, npm package installation didnt work)
 - ripgrep
 - fonts-recommended
-- typst
+- typst, not available on apt
 - nvm
 - go
 - firefox - using their apt repository rather than the slowly updated in debian packages
@@ -38,7 +38,6 @@ Installed:
 - mpv
 - zathura
 - xdg-desktop-portal-wlr for screen sharing & fixes lagginess after sleeping
-- sc-im: https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian
 - a2ln: sudo apt install pipx libcairo2-dev libgirepository1.0-dev gir1.2-notify-0.7 python3-dev && pipx install a2ln
 - input-remapper version 2 (debian 12 repo outdated)
 - direnv
