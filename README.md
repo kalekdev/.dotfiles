@@ -19,7 +19,24 @@ Installed:
 - sway
 - swaylock
 - brightnessctl
-- apt install network-manager for nmcli / nmtui commands - https://stackoverflow.com/a/51282646/12320544 fixed wpa_supplicant conflict
+- apt install network-manager for nmcli / nmtui commands. Then the following fixes to enable it:
+1. Change /etc/wpa_supplicant.conf to contain the following content:
+
+```
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=0
+update_config=0
+```
+Block "network={...}" should be removed, and also, update_config should be set to 0.
+2. Comment out any mention of wifi interface in /etc/network/interfaces
+3. Create /etc/NetworkManager/NetworkManager.conf with the following content:
+```
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=true
+```
 - zsh, change to default shell
 - pure (manually, npm package installation didnt work)
 - ripgrep

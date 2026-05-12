@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# The limit set in bios overrides state every time the system boots
+# this script is useful to change limit whilst running if needed
 LIMIT=80
 NIX_SHELL="$(command -v nix-shell 2>/dev/null || echo /nix/var/nix/profiles/default/bin/nix-shell)"
 
