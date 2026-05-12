@@ -61,6 +61,7 @@ managed=true
 - entr
 - jmtpfs for mounting MTP protocol devices. Run `jmtpfs TARGET_MOUNT_DIR` to mount the first available MTP device. No need to unmount
 - ocrmypdf
+- fprintd, libpam-fprintd, lxpolkit. Then follow this https://wiki.debian.org/SecurityManagement/fingerprint%20authentication
 
 TODO:
 - Clipboard history: https://www.reddit.com/r/swaywm/comments/ov2v5c/what_are_your_bests_shortcuts_scripts_config/

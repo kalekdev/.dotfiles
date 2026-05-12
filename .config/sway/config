@@ -10,6 +10,9 @@ exec mako
 # Start android notification server
 exec a2ln
 
+# TODO: Check if needed for fingerprint on nix
+exec lxpolkit
+
 ### Variables
 
 # Logo key
@@ -103,7 +106,7 @@ input * xkb_layout us(altgr-intl)
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Lock screen
+    # Lock screen. Press enter to await fingerprint scan
     bindsym $mod+Ctrl+l exec swaylock -f -c 000000
 
     # Reload the configuration file
