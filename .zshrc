@@ -75,3 +75,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -f "/home/kalek/.ghcup/env" ] && . "/home/kalek/.ghcup/env" # ghcup-env
 
 eval "$(direnv hook zsh)"
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
