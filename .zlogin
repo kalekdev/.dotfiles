@@ -1,3 +1,6 @@
+# ssh-agent runs a systemd service, this exports the socket path
+export SSH_AUTH_SOCK=${XDG_RUNTIME_DIR}/ssh-agent.socket
+
 # =GNOME is a fix for electron secrets decryption, see here: https://github.com/electron/electron/issues/32598#issuecomment-1648615204
 export XDG_CURRENT_DESKTOP=GNOME # xdg-desktop-portal
 export XDG_SESSION_DESKTOP=sway # systemd
